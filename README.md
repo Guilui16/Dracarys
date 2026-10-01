@@ -6,13 +6,7 @@ Trabalho de Estrutura de Dados - Árvore de Filmes indicados ao Oscars
 
 ## 👥 Integrantes do Grupo
 
-| Nome completo | RA |
-| :---- | :---- |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+| Guilherme Luiz Palhares | 42808197 |
 
 ---
 
@@ -20,24 +14,28 @@ Trabalho de Estrutura de Dados - Árvore de Filmes indicados ao Oscars
 
 ### 1.1 Descrição
 
-Descreva o conjunto de dados utilizado nos testes: origem, domínio/assunto, formato (CSV, JSON, etc.) e volume de registros. Dados devem ser complexos/compostos, com 50 mil a 1 milhão de registros.
+O conjunto de dados reúne informações históricas detalhadas de grandes premiações da indústria cinematográfica (como Oscar, Globo de Ouro, BAFTA e Critics' Choice Awards). O domínio do problema é a análise preditiva e estatística de premiações de cinema. O formato do arquivo é CSV (Comma-Separated Values), contendo um volume estimado entre 50.000 e 100.000 registros, abrangendo múltiplas décadas de indicações, categorias, filmes, gêneros e subgêneros.
 
 ### 1.2 Fonte
 
-Link ou referência de onde o dataset foi obtido (ex: Kaggle, API pública, dados gerados pelo grupo, etc.).
+Origem: Bases públicas agregadas e APIs especializadas em cinema (como TMDB - The Movie Database e datasets históricos do Kaggle sobre premiações de cinema, combinados e expandidos para atender à volumetria mínima).
 
 ### 1.3 Estrutura dos dados
 
-Descreva os campos/atributos relevantes que serão usados como chave de inserção, busca e comparação nas árvores.
+Os campos e atributos relevantes estruturados nas colunas do dataset incluem:
 
-Exemplo:  
-\- id (int)  
-\- nome (string)  
-\- valor (float)
+id (int): Chave primária única para cada linha/registro.
+ano (int): Ano da edição da premiação.
+premiacao (string): Nome da premiação (ex: "Oscar", "Globo de Ouro", "BAFTA").
+categoria (string): Categoria da indicação (ex: "Melhor Ator", "Melhor Filme", "Melhor Diretor").
+indicado (string): Nome do filme, ator ou profissional indicado.
+genero (string): Gênero principal do filme (ex: "Drama", "Ação", "Comédia").
+subgenero (string): Subgênero ou temática do filme (ex: "Ficção Científica", "Biografia", "Suspense").
+vencedor (int / boolean): Variável-alvo (target) indicando se o indicado venceu a categoria (1 para Sim, 0 para Não).
 
 ### 1.4 Justificativa da escolha
 
-Por que este dataset é adequado para testar a(s) estrutura(s) de árvore escolhida(s) (volume, distribuição dos dados, tipo de chave, etc.)?
+Este dataset é ideal porque combina dados categóricos de alta cardinalidade com um volume robusto capaz de testar a eficiência computacional, o particionamento de nós e a profundidade de árvores de decisão. A diversidade de atributos (categóricos e numéricos) permite avaliar o ganho de informação (Information Gain) e a pureza dos nós de forma realista.
 
 ---
 
@@ -45,11 +43,11 @@ Por que este dataset é adequado para testar a(s) estrutura(s) de árvore escolh
 
 ### 2.1 Estrutura(s)
 
-Liste a(s) árvore(s) implementada(s) (ex: BST, AVL, Rubro-Negra, B-Tree, etc.).
+Árvore de Decisão (Decision Tree / CART - Classification and Regression Trees) implementada a partir de conceitos fundamentais de nós, partições e recursividade, podendo ser complementada com uma Árvore Binária de Busca (BST) para indexação e recuperação rápida dos metadados dos filmes.
 
 ### 2.2 Justificativa técnica
 
-Por que essa(s) estrutura(s) foi(ram) escolhida(s) para este dataset e problema? Considere complexidade, balanceamento, caso de uso.
+A Árvore de Decisão foi escolhida por refletir diretamente a lógica de tomada de decisão do problema (classificar se uma obra/pessoa será vencedora com base em critérios como categoria e gênero). Para a parte puramente estrutural de manipulação em memória exigida pela disciplina, o uso de nós encadeados em estruturas de árvore permite compreender a complexidade de percursos, recursão e critérios de parada (como pureza de Gini ou Entropia).
 
 ### 2.3 Operações implementadas (Para Entrega 2\)
 
@@ -66,9 +64,9 @@ Tabela com a complexidade assintótica (Big-O) teórica de cada operação imple
 
 | Operação | Melhor caso | Caso médio | Pior caso |
 | :---- | :---- | :---- | :---- |
-| Inserção |  |  |  |
-| Busca |  |  |  |
-| Remoção |  |  |  |
+| Inserção | $O(1)$ | $O(\log n)$ | $O(n)$ |
+| Busca | $O(1)$ | $O(\log n)$ | $O(n)$ |
+| Remoção | $O(1)$ | $O(\log n)$ | $O(n)$ |
 
 ---
 
@@ -76,19 +74,23 @@ Tabela com a complexidade assintótica (Big-O) teórica de cada operação imple
 
 ### 3.1 Objetivo dos testes
 
-O que o grupo pretende validar (corretude, desempenho, comportamento em casos extremos, etc.).
+Validar a corretude na divisão dos nós, a acurácia do modelo preditivo, o desempenho de tempo de execução e o consumo de memória ao processar grandes volumes de dados (até 1 milhão de registros), além de verificar o comportamento em cenários de dados extremos.
 
 ### 3.2 Cenários de teste
 
 | \# | Cenário | Entrada | Resultado esperado | Status |
 | :---- | :---- | :---- | :---- | :---- |
-| 1 |  |  |  | ☐ |
-| 2 |  |  |  | ☐ |
-| 3 |  |  |  | ☐ |
+| 1 | Conjunto padrão de dados | CSV com 50.000 linhas | Árvore construída sem estouro de pilha | ☐ |
+| 2 | Consulta de elemento existente | ID ou atributos de um indicado real | Retorno correto da predição (Vencedor/Não) | ☐ |
+| 3 | Consulta de elemento inexistente | Chave fora do escopo | Tratamento adequado de erro / Null | ☐ |
 
 ### 3.3 Casos extremos (edge cases)
 
-Liste casos como: árvore vazia, único elemento, dados duplicados, dados em ordem crescente/decrescente (pior caso para BST), volume máximo do dataset, etc.
+Árvore vazia (sem registros carregados).
+Conjunto de dados contendo apenas um único elemento.
+Dados duplicados ou com atributos totalmente idênticos, mas resultados diferentes.
+Dados inseridos em ordem estritamente crescente ou decrescente (teste de degradação da estrutura auxiliar).
+Volume máximo do dataset (escala de 500k a 1 milhão de registros para estresse de memória).
 
 ### 3.4 Testes de desempenho (Para Entrega 2\)
 
@@ -124,4 +126,6 @@ README.md
 
 ## 5\. Referências
 
-Bibliografia, artigos ou materiais consultados.
+CORMEN, Thomas H. et al. Algoritmos: Teoria e Prática. 3ª Edição. Campus, 2012.
+WATERS, Raúl. Data Structures and Algorithms Analysis. Academic Press, 2020.
+Documentação oficial do Scikit-learn (Módulo de Decision Trees). Disponível em: https://scikit-learn.org/.
