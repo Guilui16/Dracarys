@@ -1,5 +1,5 @@
 # Dracarys
-Trabalho de Estrutura de Dados - Árvore de Filmes indicados ao Oscars
+Trabalho de Estrutura de Dados - Árvore de Filmes indicados ao Oscar, Globo de Ouro, BAFTA e Critics' Choice Awards
 # \[Nome do Projeto\]
 
 > Entrega 1 de trabalho da disciplina Estruturas de Dados II — UNICID Prof. Cid Rodrigues de Andrade
