@@ -1,7 +1,8 @@
-# Árvores AVL e Rubro-Negra para Consulta de Premiações e Filmes
+# Dracarys
+Trabalho de Estrutura de Dados - Árvore de Filmes indicados ao Oscar, Globo de Ouro, BAFTA e Critics' Choice Awards
+# \[GOT Realness\]
 
-**Entregas 1 e 2 — Estruturas de Dados II — UNICID**  
-**Professor:** Cid Rodrigues de Andrade
+> Entrega 1 de trabalho da disciplina Estruturas de Dados II — UNICID Prof. Cid Rodrigues de Andrade
 
 ## 👥 Integrantes do Grupo
 
