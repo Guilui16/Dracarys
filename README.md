@@ -6,7 +6,7 @@ Trabalho de Estrutura de Dados - Árvore de Filmes indicados ao Oscar, Globo de 
 
 ## 👥 Integrantes do Grupo
 
-| Guilherme Luiz Palhares | 42808197 |---|
+| Guilherme Luiz Palhares | 42808197 | Guiluiz16 |
 
 | Gustavo de Siqueira Rodrigues | 43446965 |  |
 
