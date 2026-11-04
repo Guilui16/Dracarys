@@ -1,0 +1,6 @@
+id,premiacao,ano_cerimonia,ano_filme,categoria,indicado,filme,vencedor,genero,subgenero,imdb_id,fonte,status_genero
+1,Oscar,1928,1927,ACTOR,Richard Barthelmess,The Noose,0,,,,https://raw.githubusercontent.com/Sidodj/SQL-Oscar-project/main/data/the_oscar_award.csv,nao_vinculado
+2,Oscar,1928,1927,ACTOR,Emil Jannings,The Last Command,1,,,,https://raw.githubusercontent.com/Sidodj/SQL-Oscar-project/main/data/the_oscar_award.csv,nao_vinculado
+3,Oscar,1928,1927,OUTSTANDING PICTURE,Paramount Famous Lasky,Wings,1,,,,https://raw.githubusercontent.com/Sidodj/SQL-Oscar-project/main/data/the_oscar_award.csv,nao_vinculado
+4,Globo de Ouro,1944,1943,Best Director - Motion Picture,Henry King,The Song Of Bernadette,1,,,,https://raw.githubusercontent.com/prasertcbs/basic-dataset/master/golden_globe_awards.csv,nao_vinculado
+5,Globo de Ouro,1944,1943,Picture,The Song Of Bernadette,,1,,,,https://raw.githubusercontent.com/prasertcbs/basic-dataset/master/golden_globe_awards.csv,nao_vinculado
