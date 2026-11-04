@@ -2,7 +2,7 @@
 Trabalho de Estrutura de Dados - Árvore de Filmes indicados ao Oscar, Globo de Ouro, BAFTA e Critics' Choice Awards
 # \[GOT Realness\]
 
-> Entrega 1 de trabalho da disciplina Estruturas de Dados II — UNICID Prof. Cid Rodrigues de Andrade
+> Entrega 2 de trabalho da disciplina Estruturas de Dados II — UNICID Prof. Cid Rodrigues de Andrade
 
 ## 👥 Integrantes do Grupo
 
