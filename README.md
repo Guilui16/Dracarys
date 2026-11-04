@@ -6,13 +6,11 @@ Trabalho de Estrutura de Dados - Árvore de Filmes indicados ao Oscar, Globo de 
 
 ## 👥 Integrantes do Grupo
 
-| Nome completo | RA | GitHub |
 |Guilherme Luiz Palhares|42808197|---|
 |Gustavo de Siqueira Rodrigues|43446965|  |
 |Gustavo do Rosario Trujillo|41944925|  |
 |Rafael Miranda de Souza Lima|41765401|  |
-|  |  |  |
-|  |  |  |
+
 
 
 ## 1. Dataset
