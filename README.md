@@ -139,4 +139,4 @@ IMDb. Non-Commercial Datasets. `https://developer.imdb.com/non-commercial-datase
 GITHUB. Sidodj/SQL-Oscar-project: the_oscar_award.csv. `https://github.com/Sidodj/SQL-Oscar-project`  
 GITHUB. prasertcbs/basic-dataset: golden_globe_awards.csv. `https://github.com/prasertcbs/basic-dataset`  
 CORMEN, T. H. et al. Introduction to Algorithms. 4. ed. MIT Press, 2022.  
-REPOSITÓRIO DO GRUPO. `https://github.com/Guilui16/Dracarys/tree/main/cinema_project`
+REPOSITÓRIO DO GRUPO. `[https://github.com/Guilui16/Dracarys/tree/main/cinema_project](https://github.com/Guilui16/Dracarys/blob/main/README.md)`
