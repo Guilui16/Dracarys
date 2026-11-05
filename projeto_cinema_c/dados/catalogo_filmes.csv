@@ -1,0 +1,4 @@
+imdb_id,filme,ano_filme,genero,generos_imdb,subgenero,fonte
+tt0019071,The Last Command,1927,Drama,Drama,War,https://datasets.imdbws.com/title.basics.tsv.gz
+tt0036377,The Song of Bernadette,1943,Drama,Drama,Biography,https://datasets.imdbws.com/title.basics.tsv.gz
+tt0031381,Gone with the Wind,1939,Drama,Drama,Romance,https://datasets.imdbws.com/title.basics.tsv.gz
