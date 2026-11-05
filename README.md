@@ -103,8 +103,8 @@ Testes locais executados e aprovados:
 No terminal, na raiz do repositório, execute os comandos abaixo:
 
 ```bash
-git clone https://github.com/Guilui16/Dracarys.git
-cd Dracarys/cinema_project
+git clone [https://github.com/Guilui16/Dracarys.git
+cd Dracarys/cinema_project](https://github.com/Guilui16/Dracarys/tree/main/projeto_cinema_c)
 
 # Compilar todos os módulos usando o Makefile
 make
