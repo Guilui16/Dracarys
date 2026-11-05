@@ -1,6 +1,0 @@
-id,premiacao,ano_cerimonia,ano_filme,categoria,indicado,filme,vencedor,genero,subgenero,imdb_id,fonte,status_genero
-1,Oscar,1929,1927,Actor,Emil Jannings,The Last Command,1,Drama,,tt0019071,https://raw.githubusercontent.com/Sidodj/SQL-Oscar-project/main/data/the_oscar_award.csv,imdb_exato
-2,Oscar,1929,1927,Writing,Lajos Biró,The Last Command,0,Drama,,tt0019071,https://raw.githubusercontent.com/Sidodj/SQL-Oscar-project/main/data/the_oscar_award.csv,imdb_exato
-3,Globo de Ouro,1944,1943,Best Picture,Drama,The Song of Bernadette,1,Drama,,tt0036377,https://raw.githubusercontent.com/prasertcbs/basic-dataset/master/golden_globe_awards.csv,imdb_exato
-4,Globo de Ouro,1944,1943,Best Director,Henry King,The Song of Bernadette,1,Drama,,tt0036377,https://raw.githubusercontent.com/prasertcbs/basic-dataset/master/golden_globe_awards.csv,imdb_exato
-5,Oscar,1940,1939,Best Picture,David O. Selznick,Gone with the Wind,1,Drama,,tt0031381,https://raw.githubusercontent.com/Sidodj/SQL-Oscar-project/main/data/the_oscar_award.csv,imdb_exato
