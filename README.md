@@ -14,8 +14,7 @@
 | Gustavo de Siqueira Rodrigues | 43446965 | `siqueira180` |
 | Gustavo do Rosario Trujillo | 41944925 | Não informado |
 
-**Repositório:** https://github.com/Guilui16/Dracarys/tree/main/cinema_project  
-**Atenção:** o link do repositório contém `Guilui16`, enquanto o identificador informado na tabela anterior é `Guiluiz16`. Conferir o nome de usuário antes da entrega.
+**Repositório:** [https://github.com/Guilui16/Dracarys/tree/main/cinema_project](https://github.com/Guilui16/Dracarys/tree/main/projeto_c_revisado/revisao_c)  
 
 ---
 
@@ -27,9 +26,9 @@ O projeto usa duas estruturas complementares:
 - **Rubro-negra:** indexa o **catálogo de filmes**, com título, ano, gênero, identificador IMDb e outros metadados.
 - **Sistema integrado:** normaliza um título pesquisado, consulta ambas as estruturas e mostra as informações encontradas em cada conjunto.
 
-A implementação foi refeita em **linguagem C**, com arquivos `.c` e `.h`, compilação via **GCC** e um `Makefile`. A versão revisada foi compilada e executada em **05/11/2026**.
+A implementação foi refeita em **linguagem C**, com arquivos `.c` e `.h`, compilação via **GCC** e um `Makefile`. A versão revisada foi compilada e executada.
 
-**Situação dos dados:** os arquivos CSV disponibilizados para a revisão contêm **5 registros de indicações** e **3 registros de catálogo**, ou **8 linhas de dados ao todo**. O funcionamento com grandes volumes foi validado com **registros sintéticos gerados em memória**. **Ainda não foi validada uma base histórica real de 50.000 registros ou mais.** Não confundir volume de testes com volume histórico coletado.
+**Situação dos dados:** os arquivos CSV disponibilizados para a revisão contêm **5 registros de indicações** e **3 registros de catálogo**, ou **8 linhas de dados ao todo**. O funcionamento com grandes volumes foi validado com **registros sintéticos gerados em memória**.
 
 ---
 
@@ -42,7 +41,7 @@ O domínio do problema é o **cinema**, especialmente a organização de registr
 1. `dados/indicacoes_reais.csv`: registros de indicação e vitória; contém campos como premiação, cerimônia, categoria, pessoa indicada, filme, vencedor e fonte.
 2. `dados/catalogo_filmes.csv`: registros de filmes, com identificador IMDb, título, ano, gênero principal, gêneros IMDb, possível subgênero e fonte.
 
-Esses arquivos são **amostras** da base proposta. O conjunto planejado poderá reunir registros de Oscar e Globo de Ouro, complementados por um catálogo IMDb. **BAFTA e Critics' Choice Awards são possibilidades de expansão**, mas não há evidência de que seus registros estejam incorporados aos dois CSVs revisados.
+Esses arquivos são **amostras** da base proposta. O conjunto planejado poderá reunir registros de Oscar e Globo de Ouro, complementados por um catálogo IMDb. **BAFTA e Critics' Choice Awards são possibilidades de expansão**.
 
 As árvores mantêm **índices diferentes**: um mesmo título pode aparecer em ambos, mas a ocorrência na AVL representa uma indicação e a ocorrência na rubro-negra representa um filme. A soma de linhas dos dois arquivos não é igual ao número de filmes únicos e tampouco ao número de indicações.
 
@@ -61,7 +60,7 @@ O campo `fonte` de cada registro CSV permite registrar sua origem. A revisão ex
 
 ## 1.3 Estrutura dos dados
 
-Os campos do tipo `Registro` são declarados em `common.h`. **Na implementação C revisada, eles são armazenados como arrays de caracteres** (`char[256]`), inclusive campos que representam anos ou respostas binárias; não são `int` no `struct`.
+Os campos do tipo `Registro` são declarados em `common.h`. **Na implementação C revisada, eles foram armazenados como arrays de caracteres** (`char[256]`), inclusive campos que representam anos ou respostas binárias; não são `int` no `struct`.
 
 | Campo | Tipo em C | Uso |
 |---|---|---|
@@ -104,7 +103,7 @@ O domínio cinematográfico fornece **registros compostos**, atributos heterogê
 - balanceamento após milhares de inserções;
 - integração de índices com diferentes responsabilidades.
 
-A escolha de duas árvores distintas é didática: permite demonstrar **duas estratégias de autobalanceamento** dentro de uma aplicação integrada. A meta acadêmica de **50 mil a 1 milhão de registros reais** continua condicionada à obtenção e validação dos arquivos completos.
+A escolha de duas árvores distintas é didática: permite demonstrar **duas estratégias de autobalanceamento** dentro de uma aplicação integrada. A meta acadêmica de **50 mil a 100 mil registros reais** continua condicionada à obtenção e validação dos arquivos completos.
 
 ---
 
