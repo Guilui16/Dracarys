@@ -416,7 +416,7 @@ Para consultar outro filme, substitua o argumento de `--buscar` pelo título des
 5. GitHub. *prasertcbs/basic-dataset*. https://github.com/prasertcbs/basic-dataset
 6. CORMEN, Thomas H. et al. *Introduction to Algorithms*. 4. ed. MIT Press, 2022.
 7. ISO/IEC. *ISO/IEC 9899: Programming Languages — C* (referência à linguagem C).
-8. Repositório do grupo: https://github.com/Guilui16/Dracarys/tree/main/cinema_project
+8. Repositório do grupo: [https://github.com/Guilui16/Dracarys/tree/main/cinema_project](https://github.com/Guilui16/Dracarys/tree/main/projeto_c_revisado/revisao_c)
 
 ---
 
