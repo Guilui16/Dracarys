@@ -10,7 +10,7 @@
 
 | Integrante | RA | GitHub |
 |---|---|---|
-| Guilherme Luiz Palhares | 42808197 | `Guiluiz16` (conforme README anterior) |
+| Guilherme Luiz Palhares | 42808197 | `Guiluiz16` |
 | Gustavo de Siqueira Rodrigues | 43446965 | `siqueira180` |
 | Gustavo do Rosario Trujillo | 41944925 | Não informado |
 
